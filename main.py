@@ -35,17 +35,18 @@ bot = Client(
 
 @bot.on_message(filters.command(["start"]))
 async def start(bot: Client, m: Message):
-    await m.reply_text(f"<b>Hello {m.from_user.mention} 👋\n\n I Am A Bot For Download Links From Your **.TXT** File And Then Upload That File On Telegram So Basically If You Want To Use Me First Send Me /upload Command And Then Follow Few Steps..\n\nUse /stop to stop any ongoing task.</b>")
+    await m.reply_text(f"<b>Hello {m.from_user.mention} 👋\n\n ME TXT TO VIDEO PDF DOWNLOADER BOT HU **STRANGER** MERE BOT KO USE KARNE KE LIYE YE COMMAND DALO 🧟‍♂️👨‍💻👉 Send Me /STRANGER Command And  Follow KR LE MERE SARE Steps..\n\nUse /stop to stop any ongoing task.</b>")
 
 
 @bot.on_message(filters.command("stop"))
 async def restart_handler(_, m):
-    await m.reply_text("**Stopped**🚦", True)
+    await m.reply_text("**
+🍬  🎀  𝒮𝒯𝑅𝒜𝒩𝒢𝐸𝑅 𝒜𝒫𝒩𝐸 𝐵♡𝒯 𝒦❤ 𝑅💗𝒦 𝐿𝐸  🎀  🍬**🚦", True)
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 
 
-@bot.on_message(filters.command(["upload"]))
+@bot.on_message(filters.command(["STRANGER"]))
 async def upload(bot: Client, m: Message):
     editable = await m.reply_text('𝕤ᴇɴᴅ ᴛxᴛ ғɪʟᴇ ⚡️')
     input: Message = await bot.listen(editable.chat.id)
